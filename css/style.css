@@ -1,0 +1,592 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scrollbar-width: normal;
+  scrollbar-color: white;
+}
+
+/*Permite tener el footer siempre al final de la página.*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f0d0c;
+}
+
+footer {
+  margin-top: auto;
+}
+
+p {
+  color: white;
+}
+
+/*Clases personalizadas - General */
+
+.div__logo {
+  display: flex;
+  justify-content: center;
+  padding: 0.625rem 0;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  background-color: #a69a9e;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-family: "MODENINE";
+}
+
+a {
+  font-size: 18px;
+}
+
+/* Para el Slider - INDEX */
+
+.main {
+  width: 100%;
+  height: calc(100vh - 300px);
+}
+
+.div__container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.div__container ul {
+  display: flex;
+  width: 400%;
+  padding: 0;
+  animation: slider 15s infinite alternate linear;
+}
+
+.div__container li {
+  width: 100%;
+  list-style: none;
+}
+
+.div__container li img {
+  width: 100%;
+}
+
+@keyframes slider {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* Project */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 300px);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.container .box {
+  position: relative;
+  width: 434px;
+  height: 280px;
+  overflow: hidden;
+  transition: 0.5s;
+  filter: grayscale(100%);
+  background-size: 430px;
+}
+
+.container .box:hover {
+  z-index: 1;
+  transform: scale(1.25);
+  filter: grayscale(0);
+}
+
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box .imgBx:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(180deg, white, gray);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .box:hover .imgBx:before {
+  opacity: 1;
+}
+
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+}
+.container .box .content a {
+  text-decoration: none;
+}
+
+.container .box .content h2 {
+  color: white;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+}
+
+.container .box:hover .content h2 {
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.container .box .content p {
+  color: white;
+  transform: translateY(200px);
+  transition: 0.5s;
+  font-size: 14px;
+}
+
+.container .box:hover .content p {
+  transform: translateY(0);
+  transition-delay: 0.25s;
+}
+
+/*  Proyectos  */
+.h1__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  color: white;
+}
+
+.div__img > a > img {
+  display: flex;
+  margin: auto;
+  padding-bottom: 30px;
+  width: 45%;
+  cursor:zoom-in;
+}
+
+.div__grid {
+  display: grid;
+  grid-template-columns: max-content(4);
+}
+
+.menu li {
+  text-align: start;
+  border-top: 1px solid gray;
+}
+
+.menu ul {
+  flex-direction: column;
+}
+
+#btn-menu:checked ~ .menu {
+  margin: 0;
+}
+#btn-footer:checked ~ .footer {
+  margin: 0;
+}
+.div__logo {
+  -webkit-animation: slide-in-fwd-center 2.8s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/*  Project section */
+.section__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.125rem;
+
+}
+
+.div__container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 -1.875rem;
+}
+.div__container-flex > a > img {
+  width: 50%;
+  
+}
+
+.div__container-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.938rem -3.125rem 0 -20.625rem;
+  color: white;
+}
+
+.btn__readMore {
+  position: relative;
+  padding: 0.625rem 0.938rem;
+  border: none;
+  outline: none;
+  background: #a69a9e;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.btn__readMore:hover {
+  color: black;
+}
+
+.btn__readMore > span {
+  position: absolute;
+  background: white;
+  transition: 0.5s;
+}
+
+.btn__readMore > span:nth-child(1) {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: -100%;
+}
+.btn__readMore > span:nth-child(2) {
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  right: -100%;
+}
+.btn__readMore > span:nth-child(3) {
+  width: 1px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+.btn__readMore > span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+
+.btn__readMore:hover > span:nth-child(1) {
+  left: 0;
+}
+
+.btn__readMore:hover > span:nth-child(2) {
+  right: 0;
+}
+.btn__readMore:hover > span:nth-child(3) {
+  bottom: 0;
+}
+
+.btn__readMore:hover > span:nth-child(4) {
+  top: 0;
+}
+
+.centrando {
+  margin-left: 300px;
+}
+/*Media*/
+@font-face {
+  src: url("../Font/MODENINE.TTF");
+  font-family: MODENINE;
+}
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.nav {
+  background: #a69a9e;
+  height: 50px;
+  color: black;
+  font-family: "MODENINE";
+}
+.nav__img {
+  width: 2.5rem;
+}
+.nav__container {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.5em;
+}
+
+.nav__footer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.5em;
+}
+
+.nav__item {
+  color: black;
+  text-decoration: none;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 0.5s;
+}
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+.nav__input:checked + .nav__menu {
+  clip-path: circle(100% at center);
+}
+
+.hide {
+  display: none; 
+}
+
+.showText {
+  display: block;
+}
+
+.form__fieldset {
+  text-align: center;
+}
+
+
+.form__fieldset > legend{
+  background-color: white;
+}
+
+/* LightBox */
+.lightBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+}
+
+.lightBox img {
+  /*width: 75vw;
+  max-height: 70vh;*/
+  width: 2000vw;
+  max-height: 100%;
+}
+
+.lightBox:target {
+  transform: scale(1);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 4.375rem;
+  right: 4.375rem;
+  background: #a69a9e;
+  color: black;
+  text-decoration: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  font-family: "MODENINE";
+}
+
+.next {
+  display: block;
+  color: #a69a9e;
+  background: black;
+  text-decoration: none;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.125rem;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .div__container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .div__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .div__container {
+    width: 90%;
+  }
+
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 0.781rem;
+    bottom: 3.125rem;
+    background: gray;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .div__img {
+    width: 600px;
+  }
+  .div__container-flex {
+    width: 650px;
+    padding-left: 30px;
+  }
+
+  .div__description {
+    margin-left: 600px;
+  }
+
+  .btn__readMore {
+    margin-right: 400px;
+  }
+
+  .div__description{
+    margin-right: 280px;
+  }
+
+  .div__moreDescription {
+    margin-left: 360px;
+  }
+  .centrando {
+    margin-left: 700px;
+  }
+  .div__article {
+    text-align: center;
+  }
+  .close {
+    top: 1.25rem;
+    right: 1.25rem;
+}
+}
