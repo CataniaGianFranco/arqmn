@@ -53,61 +53,8 @@ a {
 
 /* Para el Slider - INDEX */
 
-.main {
-  width: 100%;
-  height: calc(100vh - 300px);
-}
-
-.div__container {
-  width: 50%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.div__container ul {
-  display: flex;
-  width: 400%;
-  padding: 0;
-  animation: slider 15s infinite alternate linear;
-}
-
-.div__container li {
-  width: 100%;
-  list-style: none;
-}
-
-.div__container li img {
-  width: 100%;
-}
-
-@keyframes slider {
-  0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-
-  75% {
-    margin-left: -300%;
-  }
-  100% {
-    margin-left: -300%;
-  }
+.carousel-inner{
+  max-width: 60%;
 }
 
 /* Project */
