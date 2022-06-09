@@ -51,6 +51,25 @@ a {
   font-size: 18px;
 }
 
+/* Footer*/
+.site-footer {
+  height: 90px;
+}
+
+.icons a{
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.icons a i:hover {
+  color: white;
+  transform: scale(1.1);
+  transition: ease-in-out .1s;
+}
+
+
 /* Para el Slider - INDEX */
 
 
