@@ -9,7 +9,6 @@ html {
   height: 100%;
   scrollbar-width: normal;
   scrollbar-color: white;
-  
 }
 
 /*Permite tener el footer siempre al final de la página.*/
@@ -23,6 +22,10 @@ body {
 
 p {
   color: white;
+}
+
+.centerMain {
+  margin: auto;
 }
 
 /* Poryect 1*/
