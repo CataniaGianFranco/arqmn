@@ -20,9 +20,6 @@ body {
   background-color: #0f0d0c;
   font-family: "MODENINE";
 }
-footer {
-  margin-top: auto;
-}
 
 p {
   color: white;
@@ -269,80 +266,7 @@ a {
   width: 50%;
 }
 
-.div__container-information {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0.938rem -3.125rem 0 -20.625rem;
-  color: white;
-}
 
-.btn__readMore {
-  position: relative;
-  padding: 0.625rem 0.938rem;
-  border: none;
-  outline: none;
-  background: #a69a9e;
-  color: black;
-  cursor: pointer;
-  transition: 0.5s;
-  overflow: hidden;
-}
-
-.btn__readMore:hover {
-  color: black;
-}
-
-.btn__readMore > span {
-  position: absolute;
-  background: white;
-  transition: 0.5s;
-}
-
-.btn__readMore > span:nth-child(1) {
-  width: 100%;
-  height: 1px;
-  top: 0;
-  left: -100%;
-}
-.btn__readMore > span:nth-child(2) {
-  width: 100%;
-  height: 1px;
-  bottom: 0;
-  right: -100%;
-}
-.btn__readMore > span:nth-child(3) {
-  width: 1px;
-  height: 100%;
-  bottom: -100%;
-  left: 0;
-}
-.btn__readMore > span:nth-child(4) {
-  width: 1px;
-  height: 100%;
-  top: -100%;
-  right: 0;
-}
-
-.btn__readMore:hover > span:nth-child(1) {
-  left: 0;
-}
-
-.btn__readMore:hover > span:nth-child(2) {
-  right: 0;
-}
-.btn__readMore:hover > span:nth-child(3) {
-  bottom: 0;
-}
-
-.btn__readMore:hover > span:nth-child(4) {
-  top: 0;
-}
-
-.centrando {
-  margin-left: 300px;
-}
 /*Media*/
 @font-face {
   src: url("../Font/MODENINE.TTF");
@@ -372,82 +296,6 @@ a {
     opacity: 1;
   }
 }
-
-.nav {
-  background: #a69a9e;
-  height: 50px;
-  color: black;
-  font-family: "MODENINE";
-}
-.nav__img {
-  width: 2.5rem;
-}
-.nav__container {
-  display: flex;
-  height: 100%;
-  width: 90%;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav__menu {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2.5em;
-}
-
-.nav__footer {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2.5em;
-}
-
-.nav__item {
-  color: black;
-  text-decoration: none;
-  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
-}
-
-.nav__item::after {
-  content: "";
-  display: block;
-  background: black;
-  width: 90%;
-  margin-top: 3px;
-  height: 3px;
-  clip-path: var(--clippy);
-  transition: clip-path 0.5s;
-}
-.nav__item:hover {
-  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.nav__label,
-.nav__input {
-  display: none;
-}
-
-.nav__input:checked + .nav__menu {
-  clip-path: circle(100% at center);
-}
-
-.hide {
-  display: none;
-}
-
-.showText {
-  display: block;
-}
-
-.form__fieldset {
-  text-align: center;
-}
-
-.form__fieldset > legend {
-  background-color: white;
-}
-
 /* LightBox */
 .lightBox {
   position: fixed;
