@@ -54,16 +54,6 @@ p {
   padding: 0.625rem 0;
 }
 
-.menu ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  background-color: #a69a9e;
-  padding: 0;
-  margin: 0;
-}
-
-
 a {
   font-size: 18px;
 }
@@ -98,7 +88,7 @@ a {
 
 /* Project */
 
-.main {
+.mainProject {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +96,7 @@ a {
   height: calc(100vh - 300px);
 }
 
-.container {
+.containerProject {
   display: flex;
   position: relative;
   flex-wrap: wrap;
@@ -115,7 +105,7 @@ a {
   justify-content: center;
 }
 
-.container .box {
+.containerProject .box {
   position: relative;
   width: 434px;
   height: 280px;
@@ -125,13 +115,13 @@ a {
   background-size: 430px;
 }
 
-.container .box:hover {
+.containerProject .box:hover {
   z-index: 1;
   transform: scale(1.25);
   filter: grayscale(0);
 }
 
-.container .box .imgBx {
+.containerProject .box .imgBx {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +129,7 @@ a {
   height: 100%;
 }
 
-.container .box .imgBx:before {
+.containerProject .box .imgBx:before {
   content: "";
   position: absolute;
   top: 0;
@@ -153,11 +143,11 @@ a {
   transition: 0.5s;
 }
 
-.container .box:hover .imgBx:before {
+.containerProject .box:hover .imgBx:before {
   opacity: 1;
 }
 
-.container .box .imgBx img {
+.containerProject .box .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +155,7 @@ a {
   height: 100%;
 }
 
-.container .box .content {
+.containerProject .box .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -176,11 +166,11 @@ a {
   padding: 20px;
   align-items: flex-end;
 }
-.container .box .content a {
+.containerProject .box .content a {
   text-decoration: none;
 }
 
-.container .box .content h2 {
+.containerProject .box .content h2 {
   color: white;
   transition: 0.5s;
   text-transform: uppercase;
@@ -189,19 +179,19 @@ a {
   transform: translateY(200px);
 }
 
-.container .box:hover .content h2 {
+.containerProject .box:hover .content h2 {
   transform: translateY(0);
   transition-delay: 0.1s;
 }
 
-.container .box .content p {
+.containerProject .box .content p {
   color: white;
   transform: translateY(200px);
   transition: 0.5s;
   font-size: 14px;
 }
 
-.container .box:hover .content p {
+.containerProject .box:hover .content p {
   transform: translateY(0);
   transition-delay: 0.25s;
 }
@@ -226,15 +216,6 @@ a {
 .div__grid {
   display: grid;
   grid-template-columns: max-content(4);
-}
-
-.menu li {
-  text-align: start;
-  border-top: 1px solid gray;
-}
-
-.menu ul {
-  flex-direction: column;
 }
 
 #btn-menu:checked ~ .menu {
