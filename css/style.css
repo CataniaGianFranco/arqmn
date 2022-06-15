@@ -13,8 +13,7 @@ html {
 
 /*Permite tener el footer siempre al final de la página.*/
 body {
-  display: flex;
-  flex-direction: column;
+  
   min-height: 100vh;
   background-color: #0f0d0c;
   font-family: "MODENINE";
