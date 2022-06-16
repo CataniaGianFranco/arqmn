@@ -1,0 +1,110 @@
+/* Project */
+
+.mainProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 300px);
+  }
+  
+  .containerProject {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .containerProject .box {
+    position: relative;
+    width: 434px;
+    height: 280px;
+    overflow: hidden;
+    transition: 0.5s;
+    filter: grayscale(100%);
+    background-size: 430px;
+  }
+  
+  .containerProject .box:hover {
+    z-index: 1;
+    transform: scale(1.25);
+    filter: grayscale(0);
+  }
+  
+  .containerProject .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .containerProject .box .imgBx:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg, white, gray);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+  .containerProject .box:hover .imgBx:before {
+    opacity: 1;
+  }
+  
+  .containerProject .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .containerProject .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+  }
+  .containerProject .box .content a {
+    text-decoration: none;
+  }
+  
+  .containerProject .box .content h2 {
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+  }
+  
+  .containerProject .box:hover .content h2 {
+    transform: translateY(0);
+    transition-delay: 0.1s;
+  }
+  
+  .containerProject .box .content p {
+    color: white;
+    transform: translateY(200px);
+    transition: 0.5s;
+    font-size: 14px;
+  }
+  
+  .containerProject .box:hover .content p {
+    transform: translateY(0);
+    transition-delay: 0.25s;
+  }
+  

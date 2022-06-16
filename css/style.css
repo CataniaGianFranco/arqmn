@@ -40,7 +40,7 @@ p {
   margin: auto;
 }
 
-/* Poryect 1*/
+/* Proyect 1*/
 .padre {
   display: flex;
   justify-content: center;
@@ -71,10 +71,6 @@ a {
 }
 
 /* Footer*/
-.site-footer {
-  height: 90px;
-}
-
 .icons a {
   text-decoration: none;
   color: black;
@@ -88,9 +84,6 @@ a {
   transition: ease-in-out 0.1s;
 }
 
-.title {
-  font-size: 18px;
-}
 
 /* Para el Slider - INDEX */
 
@@ -98,9 +91,10 @@ a {
   max-width: 60%;
 }
 
+
 /* Project */
 
-.mainProject {
+/*.mainProject {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,8 +200,7 @@ a {
 .containerProject .box:hover .content p {
   transform: translateY(0);
   transition-delay: 0.25s;
-}
-
+} */
 /*  Proyectos  */
 .h1__color {
   display: flex;
