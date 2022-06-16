@@ -50,31 +50,29 @@
           </nav>
     </header>
     <main>
-        <form action="">
-            <fieldset class="form__fieldset">
-                <legend>Contactame</legend>
-                <div>
-                    <label for="userName">Nombre</label>
-                    <input type="text" method="get" id="userName" name="userName" placeholder="Nombre" required>
-                </div>
-                <div>
-                    <label for="userSurname">Apellido</label>
-                    <input type="text" method="get" id="userSurname" name="userSurname" placeholder="Apellido" required>
-                </div>
-                <div>
-                    <label for="userEmail">Email</label>
-                    <input type="email" method="get" id="userEmail" name="userEmail" placeholder="E-mail" required>
-                </div>
-                <div>
-                    <label for="userMessage">Mensaje</label>
-                    <textarea name="userMessage" id="userMessage" cols="30" rows="10"></textarea placeholder="Ingrese un texto" required>
-                </div>
-                <div>
-                    <button type="reset" value="Clear">Limpiar</button>
-                    <button type="submit" value="Submit">Enviar</button>
-                </div>
-            </fieldset>        
+      <div class="container">
+        <form class="my-2">
+          <div class="row mb-2">
+            <label class="col-2 col-form-label text-white" for="nameInput">Nombre</label>
+            <div class="col-3">
+              <input type="text" class="form-control" id="nameInput">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <label class="col-2 col-form-label text-white" for="emailInput">Email</label>
+            <div class="col-3">
+              <input type="email" class="form-control" id="emailInput">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <label class="col-2 col-form-label text-white" for="passwordInput">Mensaje</label>
+            <div class="col-3">
+              <input type="text" class="form-control" id="messageInput">
+            </div>
+          </div>
+            <button type="submit" class="btn" style="background-color: #a69a9e; color: black; font-weight: bold;">Enviar</button>
         </form>
+      </div>
     </main>
     <footer class="site-footer text-black text-center pt-2" style="background-color: #a69a9e">
       <h4>Redes sociales</h4>
