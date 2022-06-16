@@ -17,6 +17,15 @@ body {
   min-height: 100vh;
   background-color: #0f0d0c;
   font-family: "MODENINE";
+  position: relative;
+  padding-bottom: 6em;
+  min-height: 100vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 p {
