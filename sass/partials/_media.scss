@@ -1,0 +1,98 @@
+@font-face {
+    src: url("../Font/MODENINE.TTF");
+    font-family: MODENINE;
+  }
+  @-webkit-keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+      transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-fwd-center {
+    0% {
+      -webkit-transform: translateZ(-1400px);
+      transform: translateZ(-1400px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .div__container {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .div__container {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 574px) {
+    .div__container {
+      width: 90%;
+    }
+  
+    .nav__label {
+      display: block;
+      cursor: pointer;
+    }
+    .nav__menu {
+      position: fixed;
+      top: 0.781rem;
+      bottom: 3.125rem;
+      background: gray;
+      width: 100%;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      clip-path: circle(0 at center);
+      transition: clip-path 1s ease-in-out;
+    }
+  
+    .div__img {
+      width: 600px;
+    }
+    .div__container-flex {
+      width: 650px;
+      padding-left: 30px;
+    }
+  
+    .div__description {
+      margin-left: 600px;
+    }
+  
+    .btn__readMore {
+      margin-right: 400px;
+    }
+  
+    .div__description {
+      margin-right: 280px;
+    }
+  
+    .div__moreDescription {
+      margin-left: 360px;
+    }
+    .centrando {
+      margin-left: 700px;
+    }
+    .div__article {
+      text-align: center;
+    }
+    .close {
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+  }

@@ -3,10 +3,11 @@
     color: black;
     margin: 10px;
     font-size: 25px;
+
+    & i:hover {
+      color: white;
+      transform: scale(1.1);
+      transition: ease-in-out 0.3s;
+    }
   }
   
-  .icons a i:hover {
-    color: white;
-    transform: scale(1.1);
-    transition: ease-in-out 0.1s;
-  }
