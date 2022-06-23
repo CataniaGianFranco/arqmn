@@ -1,5 +1,4 @@
 /* Project */
-
 .mainProject {
   display: flex;
   justify-content: center;
@@ -66,12 +65,12 @@
         text-transform: uppercase;
         margin-bottom: 5px;
         font-size: 20px;
-        transform: translateY(200px);
+        transform: $myTranslateY;
       }
 
       & p {
         color: white;
-        transform: translateY(200px);
+        transform: $myTranslateY;
         transition: 0.5s;
         font-size: 14px;
       }

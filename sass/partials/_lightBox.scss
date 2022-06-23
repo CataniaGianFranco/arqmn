@@ -22,7 +22,6 @@
     }
   }
   
-  
   .close {
     display: block;
     position: absolute;
@@ -44,9 +43,9 @@
     color: #a69a9e;
     background: black;
     text-decoration: none;
-    width: 3.125rem;
-    height: 3.125rem;
+    width: $myRem;
+    height: $myRem;
     border-radius: 50%;
     text-align: center;
-    line-height: 3.125rem;
+    line-height: $myRem;
   }
