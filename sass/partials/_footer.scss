@@ -1,13 +1,17 @@
 .icons a {
     text-decoration: none;
-    color: black;
+    color: map-get($styles, color);
     margin: 10px;
     font-size: 25px;
 
     & i:hover {
       color: white;
       transform: scale(1.1);
-      transition: ease-in-out 0.3s;
+      transition: map-get($styles, transition);
     }
   }
   
+  .icons--with-background a {
+    @extend .icons;
+    background-color: aqua;
+  }

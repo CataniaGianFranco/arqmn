@@ -41,6 +41,11 @@
     color: white;
 }
 
+.information--with-other-color {
+    @extend .information;
+    color: green;
+}
+
 /* Sección biografía */
 .myStory {
     color: white;
