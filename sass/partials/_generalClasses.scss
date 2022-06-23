@@ -2,7 +2,7 @@
 
 /* Para el logo */
 .div__logo {
-    display: flex;
+    @include display(flex);
     justify-content: center;
     padding: 0.625rem 0;
 }
@@ -24,7 +24,7 @@
 
 /* Para cada proyecto de la sección Proyectos */
 .pictureBox {
-    display: flex;
+    @include display(flex);
     justify-content: center;
 
     &>div {

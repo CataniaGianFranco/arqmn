@@ -10,3 +10,14 @@ $styles: (
 /* Variables */
 $myRem: 3.125rem;
 $myTranslateY: translateY(200px);
+
+/* Mixins */
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin display($display) {
+    display: $display;
+}
