@@ -8,31 +8,40 @@
 }
 
 .div__logo {
-    -webkit-animation: slide-in-fwd-center 2.8s
-      cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    -webkit-animation: slide-in-fwd-center 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: slide-in-fwd-center 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  }
+}
 
-/* Para el Slider - INDEX */
+/* INDEX */
+.centerMain {
+    margin: auto;
+}
+
+/* -> Para el Slider |INDEX| */
 .carousel-inner {
     max-width: 60%;
-  }
+}
 
 /* Para cada proyecto de la sección Proyectos */
 .pictureBox {
     display: flex;
     justify-content: center;
-  }
-  
-  .pictureBox > div {
+}
+
+.pictureBox>div {
     width: 16%;
     height: auto;
     margin: 10px 5px;
-  }
-  
-  .information {
+}
+
+.information {
     display: flex;
     flex-direction: column;
     margin: auto 140px;
     color: white;
-  }
+}
+
+/* Sección biografía */
+.myStory {
+    color: white;
+}
